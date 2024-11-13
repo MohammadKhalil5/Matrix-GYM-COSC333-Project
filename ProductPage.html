@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ProductPage.css">
+    <title>Products</title>
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+
+        <!-- search bar -->
+        <div id="search-bar-container">
+            <input type="text" class="search-bar" placeholder="Search products...">
+        </div>
+
+        <section id="main">
+
+
+            <!-- filter section -->
+            <div id="filter-section">
+                <h3>Filters</h3>
+                <h4>Categories</h4>
+                <ul>
+                    <li><input type="checkbox" name="Categories" value="Supplements">Supplements</li>
+                    <li><input type="checkbox" name="Categories" value="Equipment">Equipment</li>
+                    <li><input type="checkbox" name="Categories" value="Apparel">Apparel</li>
+                </ul>
+                <h4>Availability</h4>
+                <ul>
+                    <li><input type="checkbox" name="Availability" value="Stock">In Stock</li>
+                    <li><input type="checkbox" name="Availability" value="Sale">On Sale</li>
+                </ul>
+                <h4>Price Range</h4>
+                <input type="range" name="Price" min="0" max="200" value="0" step="1">
+                <button type="submit" id="filter_button">Filter</button>
+                <button type="reset" id="reset_button">Reset</button>
+            </div>
+
+
+            <!-- product section that contains 6 Product Cards-->
+            <div id="Products">
+
+                <!-- Product Cards -->
+                <div class="Product-item">
+                    <!-- Product Image -->
+                    <div class="Product-image"><img src="images/wheyProtein.webp" alt=""></div>
+                    <!-- Product Information that contains the name, price, rating and description of the product with add to cart button -->
+                    <div class="Product-info">
+                        <!-- Name of the Product -->
+                        <p>Whey Protein</p>
+                        <!-- Price of the Product -->
+                        <p>49.99$</p>
+                        <!-- Rating of the Product -->
+                        <div class="rating"></div>
+                        <!-- Description of the Product -->
+                        <div class="Product-description">
+                            <p></p>
+                        </div>
+                        <!-- Add to Cart button -->
+                        <button class="add-to-cart" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="Product-item">
+                    <!-- Product Image -->
+                    <div class="Product-image"><img src="images/Creatine.webp" alt=""></div>
+                    <!-- Product Information that contains the name, price, rating and description of the product with add to cart button -->
+                    <div class="Product-info">
+                        <!-- Name of the Product -->
+                        <p>Creatine</p>
+                        <!-- Price of the Product -->
+                        <p>19.99$</p>
+                        <!-- Rating of the Product -->
+                        <div class="rating"></div>
+                        <!-- Description of the Product -->
+                        <div class="Product-description">
+                            <p></p>
+                        </div>
+                        <!-- Add to Cart button -->
+                        <button class="add-to-cart" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="Product-item">
+                    <!-- Product Image -->
+                    <div class="Product-image"><img src="images/mass gainer.webp" alt=""></div>
+                    <!-- Product Information that contains the name, price, rating and description of the product with add to cart button -->
+                    <div class="Product-info">
+                        <!-- Name of the Product -->
+                        <p>Mass Gainer</p>
+                        <!-- Price of the Product -->
+                        <p>29.99$</p>
+                        <!-- Rating of the Product -->
+                        <div class="rating"></div>
+                        <!-- Description of the Product -->
+                        <div class="Product-description">
+                            <p></p>
+                        </div>
+                        <!-- Add to Cart button -->
+                        <button class="add-to-cart" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="Product-item">
+                    <!-- Product Image -->
+                    <div class="Product-image"><img src="images/gloves.webp" alt=""></div>
+                    <!-- Product Information that contains the name, price, rating and description of the product with add to cart button -->
+                    <div class="Product-info">
+                        <!-- Name of the Product -->
+                        <p>Training Gloves</p>
+                        <!-- Price of the Product -->
+                        <p>14.99$</p>
+                        <!-- Rating of the Product -->
+                        <div class="rating"></div>
+                        <!-- Description of the Product -->
+                        <div class="Product-description">
+                            <p></p>
+                        </div>
+                        <!-- Add to Cart button -->
+                        <button class="add-to-cart" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="Product-item">
+                    <!-- Product Image -->
+                    <div class="Product-image"><img src="images/Wrist straps.webp" alt=""></div>
+                    <!-- Product Information that contains the name, price, rating and description of the product with add to cart button -->
+                    <div class="Product-info">
+                        <!-- Name of the Product -->
+                        <p>Weightlifting Wrist Straps</p>
+                        <!-- Price of the Product -->
+                        <p>9.99$</p>
+                        <!-- Rating of the Product -->
+                        <div class="rating"></div>
+                        <!-- Description of the Product -->
+                        <div class="Product-description">
+                            <p></p>
+                        </div>
+                        <!-- Add to Cart button -->
+                        <button class="add-to-cart" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="Product-item">
+                    <!-- Product Image -->
+                    <div class="Product-image"><img src="images/bottle.jpg" alt=""></div>
+                    <!-- Product Information that contains the name, price, rating and description of the product with add to cart button -->
+                    <div class="Product-info">
+                        <!-- Name of the Product -->
+                        <p>Water Bottle</p>
+                        <!-- Price of the Product -->
+                        <p>4.99$</p>
+                        <!-- Rating of the Product -->
+                        <div class="rating"></div>
+                        <!-- Description of the Product -->
+                        <div class="Product-description">
+                            <p></p>
+                        </div>
+                        <!-- Add to Cart button -->
+                        <button class="add-to-cart" type="button">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page Number -->
+        <div id="page-number-container">
+            <nav>
+                <ul>
+                    <li><span id="current-page">1</span></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">></a></li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>
