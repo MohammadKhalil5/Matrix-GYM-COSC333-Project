@@ -61,7 +61,7 @@ nav ul li a {
     cursor: pointer;
 }
 
-main{
+main {
     margin-top: 75px;
 }
 
@@ -119,7 +119,7 @@ main{
     margin-right: 10px;
 }
 
-#filter-section button{
+#filter-section button {
     background-color: #f44336;
     color: white;
     padding: 10px 20px;
@@ -263,6 +263,77 @@ main{
     color: #fff;
 }
 
+footer {
+    background-color: rgba(0, 97, 139, 0.311);
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 5px;
+}
+
+.footer-section h2 {
+    color: #ff4d4d;
+    margin-bottom: 8px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 3px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ff4d4d;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.socials a {
+    margin: 0 8px;
+    display: inline-block;
+}
+
+.socials img {
+    width: 35px;
+    height: 35px;
+}
+
+.footer-bottom {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #777;
+}
+
 @media screen and (max-width: 1024px) {
     #main {
         flex-direction: column;
@@ -288,9 +359,11 @@ main{
     .menu-icon {
         display: block;
     }
+
     nav ul {
         display: none;
     }
+
     header.active nav ul {
         display: block;
         position: absolute;
@@ -300,6 +373,7 @@ main{
         padding: 10px;
         border-radius: 5px;
     }
+
     nav ul li {
         margin: 10px 0;
     }
