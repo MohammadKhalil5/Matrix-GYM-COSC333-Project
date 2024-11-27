@@ -20,6 +20,9 @@
                 <li><a href="ProductPage.html">Products</a></li>
                 <li><a href="#">Programs</a></li>
             </ul>
+            <div class="cart-btn">
+                <button>Cart (0)</button>
+            </div>
         </nav>
         <div class="menu-icon">&#9776;</div>
     </header>
@@ -49,7 +52,8 @@
                     <li><input type="checkbox" name="Availability" value="Sale">On Sale</li>
                 </ul>
                 <h4>Price Range</h4>
-                <input type="range" name="Price" min="0" max="200" value="0" step="1">
+                <input type="range" name="Price" id="price-range" min="0" max="200" value="0" step="1">
+                <p>Price: <span id="price-value">0</span></p>
                 <button type="submit" id="filter_button">Filter</button>
                 <button type="reset" id="reset_button">Reset</button>
             </div>
@@ -72,7 +76,7 @@
                         <div class="rating"></div>
                         <!-- Description of the Product -->
                         <div class="Product-description">
-                            <p></p>
+                            <p>Whey Protein is a high-quality protein powder designed to support muscle recovery and growth. It's quickly absorbed, making it ideal for post-workout nutrition.</p>
                         </div>
                         <!-- Add to Cart button -->
                         <button class="add-to-cart" type="button">Add to Cart</button>
@@ -92,7 +96,7 @@
                         <div class="rating"></div>
                         <!-- Description of the Product -->
                         <div class="Product-description">
-                            <p></p>
+                            <p>It helps replenish energy levels during intense workouts, promoting enhanced performance and faster muscle recovery.</p>
                         </div>
                         <!-- Add to Cart button -->
                         <button class="add-to-cart" type="button">Add to Cart</button>
@@ -112,7 +116,7 @@
                         <div class="rating"></div>
                         <!-- Description of the Product -->
                         <div class="Product-description">
-                            <p></p>
+                            <p>It provides a balanced blend of protein, carbohydrates, and essential nutrients, perfect for individuals struggling to meet calorie requirements through diet alone. </p>
                         </div>
                         <!-- Add to Cart button -->
                         <button class="add-to-cart" type="button">Add to Cart</button>
@@ -132,7 +136,7 @@
                         <div class="rating"></div>
                         <!-- Description of the Product -->
                         <div class="Product-description">
-                            <p></p>
+                            <p>Designed for comfort and durability, our Training Gloves provide excellent grip and palm protection during workouts.</p>
                         </div>
                         <!-- Add to Cart button -->
                         <button class="add-to-cart" type="button">Add to Cart</button>
@@ -152,7 +156,7 @@
                         <div class="rating"></div>
                         <!-- Description of the Product -->
                         <div class="Product-description">
-                            <p></p>
+                            <p>Enhance your lifting performance with our Weightlifting Wrist Straps. Crafted from high-quality, durable materials, these straps provide superior support and stability to your wrists during heavy lifts.</p>
                         </div>
                         <!-- Add to Cart button -->
                         <button class="add-to-cart" type="button">Add to Cart</button>
@@ -172,7 +176,7 @@
                         <div class="rating"></div>
                         <!-- Description of the Product -->
                         <div class="Product-description">
-                            <p></p>
+                            <p>Stay hydrated with our sleek and practical Water Bottle, designed for fitness enthusiasts. Made from BPA-free materials, it features a leak-proof lid, easy-to-grip design, and a convenient capacity for your hydration needs.</p>
                         </div>
                         <!-- Add to Cart button -->
                         <button class="add-to-cart" type="button">Add to Cart</button>
@@ -228,6 +232,7 @@
             <p>&copy; 2024 MatrixGym. All rights reserved.</p>
         </div>
     </footer>
+    <script src="ProductPage.js"></script>
 </body>
 
 </html>
