@@ -221,6 +221,11 @@
         padding: 20px;
         border-radius: 10px;
         align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
      }
      .membership-card:hover{
       transform: scale(1.1);

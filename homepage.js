@@ -25,10 +25,4 @@ buttons.forEach(button => {
 });
         
         
-        let startButtons = document.querySelectorAll('.start-button');
-        startButtons.forEach(button => {
-         button.addEventListener('click', event => {
-           let planName = event.target.closest('.membership-card').querySelector('h3').textContent;
-           alert(`You have selected the ${planName}!`);
-         });
-        });
+        
