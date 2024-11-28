@@ -10,12 +10,7 @@ journeyButton.addEventListener('click',()=>{
     document.querySelector('.about-us').scrollIntoView({behavior:'smooth'});
 });
 
-let readMoreButton = document.querySelector('.read-more');
-readMoreButton.addEventListener ('click',()=>{
-    alert('Learn more about us!');
-});
    
-
 let buttons = document.querySelectorAll('.product-btn');
 buttons.forEach(button => {
  button.addEventListener('click', () => {
@@ -25,10 +20,4 @@ buttons.forEach(button => {
 });
         
         
-        let startButtons = document.querySelectorAll('.start-button');
-        startButtons.forEach(button => {
-         button.addEventListener('click', event => {
-           let planName = event.target.closest('.membership-card').querySelector('h3').textContent;
-           alert(`You have selected the ${planName}!`);
-         });
-        });
+        

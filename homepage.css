@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
  }
  body {
     background: #000;
@@ -178,6 +178,10 @@
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
    overflow: hidden;
 }
+
+.product:hover{
+   transform: scale(1.1)
+}
 .product img{
    width: 90px;
    height: 90px;
@@ -217,6 +221,11 @@
         padding: 20px;
         border-radius: 10px;
         align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
      }
      .membership-card:hover{
       transform: scale(1.1);
