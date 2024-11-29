@@ -1,0 +1,524 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: rgba(255, 38, 0, 0.527);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 60px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo span {
+    background-color: red;
+    padding: 0 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    color: red;
+    cursor: pointer;
+}
+
+main {
+    margin-top: 60px;
+}
+
+#hero-section {
+    background-image: url("https://basebangkok.com/app/uploads/2020/08/website-pics.002.jpeg");
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    height: 100vh;
+}
+
+#hero {
+    width: 50%;
+    margin: auto;
+}
+
+#hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#btn-div {
+    width: 25%;
+    margin: 5px auto;
+}
+
+#btn-div button {
+    background-color: rgba(255, 38, 0, 0.527);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#btn-div button:hover {
+    background-color: rgba(255, 38, 0);
+}
+
+#program-section {
+    padding: 50px 0;
+}
+
+#program-section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#program-section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 2px;
+    margin: auto;
+    background-color: rgba(255, 38, 0, 0.527);
+    margin-top: 5px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: clamp(50rem, 85vw, 114rem);
+    padding: 0 2.4rem;
+    margin: 0 auto;
+}
+
+.Programs {
+    position: relative;
+    border: 1px solid #707070a8;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.program-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    padding: 10px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #000;
+    background-color: rgba(255, 38, 0, 0.527);
+    clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
+    border-radius: 12px 0 0 0;
+}
+
+.program-img {
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 0%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: height 0.5s;
+    border-radius: 12px;
+}
+
+.text {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.Programs:hover .overlay {
+    height: 80%;
+    border-radius: 12px 12px 0 0;
+}
+
+.Program-info {
+    background-color: rgba(0, 97, 139, 0.427);
+    border-radius: 0 0 12px 12px;
+}
+
+.Program-info p {
+    padding: 5px 0;
+}
+
+.BookNow {
+    background-color: rgba(209, 36, 5, 0.831);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px;
+}
+
+.BookNow:hover {
+    background-color: rgba(0, 97, 139, 0.427);
+}
+
+.comment-section {
+    margin-top: 30px;
+    padding: 15px;
+}
+
+.comment-section h3,
+.comment-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#commentForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+#usernameInput,
+#commentInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: rgba(0, 97, 139, 0.427);
+    color: white;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #aaa;
+}
+
+#submit-btn {
+    font-size: 14px;
+    border: none;
+    background-color: rgba(209, 36, 5, 0.831);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px;
+    width: 150px;
+}
+
+#submit-btn:hover {
+    background-color: rgba(0, 97, 139, 0.427);
+}
+
+.comments {
+    margin-top: 20px;
+}
+
+.comments ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comments li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: rgba(0, 97, 139, 0.427);
+}
+
+.comments li p {
+    margin: 0;
+    font-size: 14px;
+    color: white;
+}
+
+.like-dislike {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button.like-btn,
+button.dislike-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+button.like-btn {
+    background-color: #28a745;
+}
+
+button.dislike-btn {
+    background-color: #dc3545;
+}
+
+button.like-btn:hover {
+    background-color: #218838;
+}
+
+button.dislike-btn:hover {
+    background-color: #c82333;
+}
+
+button span {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+button.like-btn.liked {
+    background-color: #218838;
+}
+
+button.dislike-btn.disliked {
+    background-color: #c82333;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #000;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2{
+    text-align: center;
+}
+
+.modal .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal .close:hover,
+.modal .close:focus {
+    color: red;
+    text-decoration: none;
+}
+
+#bookingForm{
+    display: flex;
+    flex-direction: column;
+}
+
+#bookingForm label{
+    padding-left: 10px;
+}
+
+#bookingForm input{
+    background-color: rgba(0, 97, 139, 0.427);
+    border: none;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 7px;
+}
+
+#program-submit{
+    background-color: rgba(209, 36, 5, 0.831);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#program-submit:hover {
+    background-color: rgba(0, 97, 139, 0.427);
+}
+
+footer {
+    background-color: rgba(0, 97, 139, 0.311);
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 5px;
+}
+
+.footer-section h2 {
+    color: #ff4d4d;
+    margin-bottom: 8px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 3px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ff4d4d;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.socials a {
+    margin: 0 8px;
+    display: inline-block;
+}
+
+.socials img {
+    width: 35px;
+    height: 35px;
+}
+
+.footer-bottom {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #777;
+}
+
+@media screen and (max-width: 1024px) {
+
+    #container {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    header.active nav ul {
+        display: block;
+        position: absolute;
+        top: 60px;
+        right: 50px;
+        background-color: #000;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #container {
+        grid-template-columns: 1fr;
+    }
+
+    .search-bar {
+        width: 90%;
+    }
+}
