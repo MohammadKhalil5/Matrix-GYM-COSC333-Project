@@ -393,6 +393,8 @@
       }
       nav ul {
           display: none;
+          flex-direction:column ;
+          position: absolute;
       }
       header.active nav ul {
           display: block;
@@ -405,5 +407,30 @@
       }
       nav ul li {
           margin: 10px 0;
+      }
+      .products-container{
+         flex-wrap: wrap;
+      }
+      .membership-card {
+         flex: 1 1 calc(50% - 20px);
+      }
+   }
+   @media (max-width: 480px){
+      .hero h1 {
+         font-size: 18px;
+      }
+      .membership-card {
+         flex: 1 1 100%;
+         font-size: 14px;
+         padding: 10px;
+      }
+      .membership-card h3 {
+         font-size: 1.2rem;
+      }
+      .membership-card p, .plan-content p {
+         font-size: 0.9rem;
+      }
+      footer {
+         font-size: 12px;
       }
    }
