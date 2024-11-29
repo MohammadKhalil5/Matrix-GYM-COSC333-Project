@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="homepage images/gym logo.jpg">
     <link rel="stylesheet" href="ProgramPage.css">
-    <title>Programs</title>
+    <title>Matrix Programs</title>
 </head>
 
 <body>
@@ -45,7 +46,8 @@
 
                 <div class="Programs">
                     <div class="program-title">Body Building</div>
-                    <div><img class="program-img" src="program images/courses-bodybuilding.jpg" alt="body building course" width="550" height="550"></div>
+                    <div><img class="program-img" src="program images/courses-bodybuilding.jpg"
+                            alt="body building course" width="550" height="550"></div>
                     <div class="overlay">
                         <div class="text">
                             <p>
@@ -63,7 +65,8 @@
 
                 <div class="Programs">
                     <div class="program-title">Cross Fit</div>
-                    <div><img class="program-img" src="program images/courses-crossfit.jpg" alt="cross fit course" width="550" height="550"></div>
+                    <div><img class="program-img" src="program images/courses-crossfit.jpg" alt="cross fit course"
+                            width="550" height="550"></div>
                     <div class="overlay">
                         <div class="text">
                             <p>
@@ -81,7 +84,8 @@
 
                 <div class="Programs">
                     <div class="program-title">Gymnastic</div>
-                    <div><img class="program-img" src="program images/courses-gymnastic.jpg" alt="gymnastic course" width="550" height="550"></div>
+                    <div><img class="program-img" src="program images/courses-gymnastic.jpg" alt="gymnastic course"
+                            width="550" height="550"></div>
                     <div class="overlay">
                         <div class="text">
                             <p>
@@ -99,7 +103,8 @@
 
                 <div class="Programs">
                     <div class="program-title">Fitness</div>
-                    <div><img class="program-img" src="program images/courses-fitness.jpg" alt="fitness course" width="550" height="550"></div>
+                    <div><img class="program-img" src="program images/courses-fitness.jpg" alt="fitness course"
+                            width="550" height="550"></div>
                     <div class="overlay">
                         <div class="text">
                             <p>
@@ -117,7 +122,8 @@
 
                 <div class="Programs">
                     <div class="program-title">TRX</div>
-                    <div><img class="program-img" src="program images/courses-TRX.jpg" alt="fitness course" width="550" height="550"></div>
+                    <div><img class="program-img" src="program images/courses-TRX.jpg" alt="fitness course" width="550"
+                            height="550"></div>
                     <div class="overlay">
                         <div class="text">
                             <p>
@@ -135,7 +141,8 @@
 
                 <div class="Programs">
                     <div class="program-title">Boxing</div>
-                    <div><img class="program-img" src="program images/courses-boxing.jpg" alt="fitness course" width="550" height="550"></div>
+                    <div><img class="program-img" src="program images/courses-boxing.jpg" alt="fitness course"
+                            width="550" height="550"></div>
                     <div class="overlay">
                         <div class="text">
                             <p>
@@ -150,12 +157,50 @@
                         <button class="BookNow" type="button">Book Now</button>
                     </div>
                 </div>
-                
+
             </div>
         </section>
 
+        <!-- comment section -->
+        <section class="comment-section">
+
+            <h3>Leave a Comment</h3>
+            <form id="commentForm">
+                <input type="text" id="usernameInput" placeholder="Enter your username" required />
+                <textarea id="commentInput" rows="4" placeholder="Write your comment here..." required></textarea>
+                <button id="submit-btn" type="submit">Submit</button>
+            </form>
+            <div class="comments">
+                <h4>Comments</h4>
+                <ul id="commentList">
+                    <!-- User comments with like/dislike buttons will appear here -->
+                </ul>
+            </div>
+
+        </section>
 
     </main>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Book Your Program</h2>
+            <form id="bookingForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <button id="program-submit" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
 
     <footer>
         <div class="footer-container">
@@ -167,10 +212,10 @@
             <div class="footer-section quick-links">
                 <h2>Quick Links</h2>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#membership">Membership</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="membershipPage.html">Membership</a></li>
+                    <li><a href="ProductPage.html">Products</a></li>
+                    <li><a href="ProgramPage.html">Programs</a></li>
                 </ul>
             </div>
             <div class="footer-section contact">

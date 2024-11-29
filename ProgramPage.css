@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif, Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body {
@@ -103,15 +103,15 @@ main {
     background-color: rgba(255, 38, 0);
 }
 
-#program-section{
+#program-section {
     padding: 50px 0;
 }
 
-#program-section-title{
+#program-section-title {
     text-align: center;
     margin-bottom: 50px;
     font-weight: 700;
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 #program-section-title::after {
@@ -122,9 +122,9 @@ main {
     margin: auto;
     background-color: rgba(255, 38, 0, 0.527);
     margin-top: 5px;
-  }
+}
 
-#container{
+#container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -133,7 +133,7 @@ main {
     margin: 0 auto;
 }
 
-.Programs{
+.Programs {
     position: relative;
     border: 1px solid #707070a8;
     border-radius: 12px;
@@ -189,12 +189,12 @@ main {
     border-radius: 12px 12px 0 0;
 }
 
-.Program-info{
+.Program-info {
     background-color: rgba(0, 97, 139, 0.427);
     border-radius: 0 0 12px 12px;
 }
 
-.Program-info p{
+.Program-info p {
     padding: 5px 0;
 }
 
@@ -214,40 +214,201 @@ main {
     background-color: rgba(0, 97, 139, 0.427);
 }
 
+.comment-section {
+    margin-top: 30px;
+    padding: 15px;
+}
 
-  
+.comment-section h3,
+.comment-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
 
+#commentForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
 
+#usernameInput,
+#commentInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: rgba(0, 97, 139, 0.427);
+    color: white;
+}
 
+input::placeholder,
+textarea::placeholder {
+    color: #aaa;
+}
 
+#submit-btn {
+    font-size: 14px;
+    border: none;
+    background-color: rgba(209, 36, 5, 0.831);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px;
+    width: 150px;
+}
 
+#submit-btn:hover {
+    background-color: rgba(0, 97, 139, 0.427);
+}
 
+.comments {
+    margin-top: 20px;
+}
 
+.comments ul {
+    list-style-type: none;
+    padding: 0;
+}
 
+.comments li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: rgba(0, 97, 139, 0.427);
+}
 
+.comments li p {
+    margin: 0;
+    font-size: 14px;
+    color: white;
+}
 
+.like-dislike {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
 
+button.like-btn,
+button.dislike-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
 
+button.like-btn {
+    background-color: #28a745;
+}
 
+button.dislike-btn {
+    background-color: #dc3545;
+}
 
+button.like-btn:hover {
+    background-color: #218838;
+}
 
+button.dislike-btn:hover {
+    background-color: #c82333;
+}
 
+button span {
+    margin-left: 5px;
+    font-weight: bold;
+}
 
+button.like-btn.liked {
+    background-color: #218838;
+}
 
+button.dislike-btn.disliked {
+    background-color: #c82333;
+}
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
+.modal-content {
+    background-color: #000;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
+.modal-content h2{
+    text-align: center;
+}
 
+.modal .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
+.modal .close:hover,
+.modal .close:focus {
+    color: red;
+    text-decoration: none;
+}
 
+#bookingForm{
+    display: flex;
+    flex-direction: column;
+}
 
+#bookingForm label{
+    padding-left: 10px;
+}
 
+#bookingForm input{
+    background-color: rgba(0, 97, 139, 0.427);
+    border: none;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 7px;
+}
 
+#program-submit{
+    background-color: rgba(209, 36, 5, 0.831);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
 
-
-
-
-
+#program-submit:hover {
+    background-color: rgba(0, 97, 139, 0.427);
+}
 
 footer {
     background-color: rgba(0, 97, 139, 0.311);
